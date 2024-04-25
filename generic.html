@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wokring of the model</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul style="font-size: 20px;">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Working</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Working of the Model</h1>
+							<h2>1. Preprocessing and Hand Detection (OpenCV):</h3>
+							<ul>
+								<li><b>Frame Grabbing: </b>OpenCV captures frames (images) from the camera feed continuously.</li>
+								
+								<li><b>Noise Reduction: </b>Techniques like filtering might be applied to reduce noise and improve image clarity.</li>
+								
+								<li><b>Skin Detection: </b>OpenCV can identify skin-tone pixels, potentially isolating hands from the background.</li>
+								
+								<li><b>Hand Segmentation: </b>Refining the hand region by separating fingers from other objects in the frame.</li>
+							</ul>
+							<hr>
+							<h2>2. Feature Extraction (OpenCV and Machine Learning):</h3>
+								<ul>
+									<li><b>Landmark Detection: </b>OpenCV can detect key points (landmarks) on the hand, like fingertips and palm center.</li>
+									
+								</ul>
+								<hr>
+							<h2>3. Gesture Recognition and Text-to-Speech (gTTS): </h3>
+								<ul>
+									<li><b>Decision Making: </b>ased on the extracted features (if not using a machine learning model) or the model's output, the system determines the most likely number represented by the hand gesture.</li>
+									
+									<li><b>Confidence Threshold: </b>A minimum confidence score might be set to ensure reliable recognition. If the confidence is below the threshold, the system might not output anything or prompt the user to try again.</li>
+									
+									<li><b>Text-to-Speech (gTTS): </b>Once a number is recognized with sufficient confidence, gTTS converts the number into spoken audio for user feedback.</li>
+								</ul>
+								<hr>
+							</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
